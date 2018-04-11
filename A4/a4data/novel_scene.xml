@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<scene ambient="0.2 0.2 0.2">
+
+<!-- camera, material, lights -->
+	 <light name="myLight" color="1 1 1" from="3 3 8 " power="0.6" type="point" />
+  <light name="myLight2" color="0.804 0.361 0.361" from="-3 5 8 " power="0.9" type="point" />
+  <light name="myLight3" color="1 1 1" from="-5 4 3 " power="0.6" type="point" />
+  <material name="red" diffuse="1 0 0" specular="0.5 0.5 0.5" hardness="50" />
+  <material name="green" diffuse="0 1 0" specular="0.5 0.5 0.5" hardness="16" />
+  <material name="blue" diffuse="0 0 1" specular="0.5 0.5 0.5" hardness="16" />
+  <material name="black" diffuse="0 0 0" specular="0 0 0" hardness="0" />
+  <material name="white" diffuse="1 1 1" specular="0 0 0" hardness="0" />
+  <material name="gold" diffuse="1 0.843 0" specular="0.5 0.5 0.5" hardness="0" />
+    <material name="orange" diffuse="1 0.647 0" specular="0.5 0.5 0.5" hardness="0" />
+      <material name="darkorange" diffuse="1 0.549 0" specular="0.5 0.5 0.5" hardness="0" />
+
+<!-- render config -->
+<render bgcolor="0 0 0" output="novel_scene.png" samples="4" >
+    <camera name="myCamera" from="3 4 6" to="1 2 0" up="0 1 0" fovy="60" width="640" height="480" />
+  </render> 
+
+  <!-- scene objects -->
+
+  	<plane coeffs="0 1 0 0">
+  		<material ref="black"/>
+  		<material2 ref="white"/>
+  	</plane>
+
+	<sphere center="-3 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+  	<sphere center="-3 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-3 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-3 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-3 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-2 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+  	<sphere center="-2 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-2 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-2 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-2 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-1 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+  	<sphere center="-1 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-1 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-1 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="-1 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="0 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="0 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="0 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="0 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="0 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="1 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="1 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="1 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="1 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="1 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="2 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="2 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="2 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="2 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="2 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="3 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="3 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="3 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="3 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="3 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="4 0 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="4 1 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="4 2 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="4 3 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+	<sphere center="4 4 0" radius="0.1">
+		<material ref="red"/>
+	</sphere>
+
+  	<node name="wall" rotation="0 0 90" translation="7 0 0">
+  		<plane>
+  			<material ref="white"/>
+  			<material2 ref="black"/>
+  		</plane>
+  	</node>
+	
+	<box min="0 0 -2" max="1 1 -1">
+		<material ref="darkorange"/>
+	</box>
+
+	<box min="1.5 0 -2" max="2.5 1 -1">
+		<material ref="darkorange"/>
+	</box>
+
+	<box min="3 0 -2" max="4 1 -1">
+		<material ref="darkorange"/>
+	</box>
+
+	<box min="4.5 0 -2" max="5.5 1 -1">
+		<material ref="darkorange"/>
+	</box>
+
+	<box min="0.75 1 -2" max="1.75 2 -1">
+		<material ref="orange"/>
+	</box>
+
+	<box min="2.25 1 -2" max="3.25 2 -1">
+		<material ref="orange"/>
+	</box>
+
+	<box min="3.75 1 -2" max="4.75 2 -1">
+		<material ref="orange"/>
+	</box>
+
+	<box min="1.5 2 -2" max="2.5 3 -1">
+		<material ref="gold"/>
+	</box>
+
+	<box min="3 2 -2" max="4 3 -1">
+		<material ref="gold"/>
+	</box>
+
+	<box min="2.25 3 -2" max="3.25 4 -1">
+		<material ref="white"/>
+	</box>
+
+
+
+	</scene>
